@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/item_task_ok"
+  android:foreground="?attr/selectableItemBackground"
+  android:padding="24dp"
+  >
+
+  <TextView
+    android:id="@+id/itemTaskNickname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="start|center_vertical"
+    android:lineSpacingExtra="4sp"
+    android:textColor="@android:color/white"
+    android:textSize="14sp"
+    tools:text="Run in a new scope\n(keep parent)"
+    />
+
+  <ImageView
+    android:id="@+id/itemTaskIcon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|center_vertical"
+    android:alpha="0.9"
+    app:srcCompat="@drawable/ic_check_circle"
+    tools:ignore="ContentDescription"
+    />
+
+</FrameLayout>
